@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
-  root 'users#index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
   resources :users do
     resources :avatars 
+    resources :user_achievements
   end
   resources :avatars, only: [:index]
   root "avatars#show"
@@ -13,5 +13,5 @@ Rails.application.routes.draw do
 #     resources :user_achievements
 #   end
 #   resources :sessions, only: [:create, :delete]
-#   resources :achievements, only: [:index, :show]
+  resources :achievements, only: [:index, :show]
 end
