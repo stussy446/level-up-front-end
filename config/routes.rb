@@ -13,5 +13,5 @@ Rails.application.routes.draw do
 #     resources :user_achievements
 #   end
 #   resources :sessions, only: [:create, :delete]
-#   resources :achievements, only: [:index, :show]
+  resources :achievements, only: [:index, :show]
 end
