@@ -1,4 +1,5 @@
 class AvatarsController < ApplicationController
+
   include HTTParty
   def index
     response =
