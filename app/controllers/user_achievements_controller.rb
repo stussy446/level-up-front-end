@@ -1,5 +1,9 @@
 class UserAchievementsController < ApplicationController
+  
   def index
+    @response = HTTParty.get("http://localhost:3001/api/users/1/user_achievements")
+    @user_achievements = @response["user_achievements"]
+    @achievement_data = @response["achievement_data"]
   end
 
   def show
@@ -10,4 +14,5 @@ class UserAchievementsController < ApplicationController
 
   def update
   end
+
 end

@@ -1,0 +1,6 @@
+<h1><%= @response["user"]["username"] %>'s Achievements</h1>
+<ul>
+	<% @achievement_data.each do |achievement| %>
+		<li><%=achievement["name"]%>--<%=achievement["description"]%></li>
+	<% end %>
+</ul>
