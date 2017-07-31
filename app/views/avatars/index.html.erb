@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Avatars!</title>
+</head>
+<body>
+    <% @names.each do |name| %>
+      Name: <%= name['name'] %><br />
+      Image link: <%= name['img'] %><br />
+      XP: <%= name['xp']%><br /><br />
+    <% end %>
+  </ul>
+</body>
+</html>
