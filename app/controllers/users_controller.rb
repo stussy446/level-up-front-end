@@ -1,11 +1,11 @@
 class UsersController < ApplicationController
   include UsersHelper
   def index
-    @users = HTTParty.get("https://level-up-api.herokuapp.com/api/users")
+    @users = HTTParty.get("localhost:3001/api/users")
   end
   
   def show
-    @response = HTTParty.get("https://level-up-api.herokuapp.com/api/users/#{params[:id]}")
+    @response = HTTParty.get("localhost:3001/api/users/#{params[:id]}")
     @user_data = @response["user"]
     @avatar = @response["avatar"]
   end
