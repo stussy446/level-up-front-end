@@ -3,7 +3,7 @@ class AvatarsController < ApplicationController
   include HTTParty
   def index
     response =
-    HTTParty.get("http://localhost:3001/api/avatars")
+    HTTParty.get("https://level-up-api.herokuapp.com/api/avatars")
     puts response
     @names = response['avatars'].map do |n|
       n
@@ -11,7 +11,7 @@ class AvatarsController < ApplicationController
   end
 
   def show
-    update_avatar = HTTParty.put("http://localhost:3001/api/users/1/avatars/1")
+    update_avatar = HTTParty.put("https://level-up-api.herokuapp.com/api/users/1/avatars/1")
 
     response =
     HTTParty.get("http://localhost:3001/api/users/1/avatars/1")

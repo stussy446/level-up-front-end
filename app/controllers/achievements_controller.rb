@@ -1,16 +1,16 @@
 class AchievementsController < ApplicationController
   def index
-   @achievements = HTTParty.get("http://localhost:3001/api/achievements")
+   @achievements = HTTParty.get("https://level-up-api.herokuapp.com/api/achievements")
   end
 
 
   def show
-    @achievement = HTTParty.get("http://localhost:3001/api/achievements/#{params[:id]}")
+    @achievement = HTTParty.get("https://level-up-api.herokuapp.com/api/achievements/#{params[:id]}")
     puts @achievement
   end
 
   def update
-    update_users_achievements = HTTParty.put("http://localhost:3001/api/achievements/#{params[:id]}")
+    update_users_achievements = HTTParty.put("https://level-up-api.herokuapp.com/api/achievements/#{params[:id]}")
     redirect_to root_path
   end
 end
