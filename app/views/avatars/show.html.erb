@@ -12,16 +12,18 @@
   <div>
     <ul class='list-group text-center'>
       <li class='list-group-item'><h1><%= @avatar['name'] %></h1></li>
-      <li class='list-group-item'><img src="<%= @avatar['img']%>"></li>
+      <li class='list-group-item'><img src="<%= @avatar['img']%>" style="width: 70%; height: 40em; border-radius: 150px 150px;"></li>
     </ul>
   </div>
-  <div class='container' style='width: 90%%; margin: 0 auto; border: 2px solid black'>
+  <div class='container' style='width: 90%%; margin: 0 auto;'>
 
       <div class='text-center col-lg-5'>
         <h2>Completed Achievements</h2>
         <ul class='list-group'>
           <% @completed_achievements.each do |achievement| %>
-            <li class='list-group-item'><%= achievement['name'] %></li>
+            <li class='list-group-item' style="width: 60%; margin: 0 auto;"><strong style="color: green;"><%= achievement['name'] %>: <%= achievement['points'] %></strong><br />
+            <%= achievement['description'] %>
+            </li>
           <% end %>
         </ul>
       </div>
@@ -30,7 +32,13 @@
       <h2>Incomplete Achievements</h2>
       <ul class='list-group'>
         <% @incomplete_achievements.each do |achievement| %>
-          <li class='list-group-item'><%= achievement['name'] %></li>
+          <li class='list-group-item' style='width: 60%; margin: 0 auto;'><strong style='color: red;'><%= achievement['name'] %>: <%= achievement["points"] %></strong><br />
+          <%= achievement['description'] %><br />
+            <%= form_tag achievement_path(achievement['id']), method: 'put' do %>
+              <%= hidden_field_tag :id, achievement['id'] %>
+              <button type='submit' class='btn btn-success'>Done!</button>
+            <% end %>
+          </li>
         <% end %>
       </ul>
     </div>
