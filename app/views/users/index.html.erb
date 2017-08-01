@@ -1,8 +1,6 @@
-<h1>HELLO</h1>
-<br>
-<p><%= @result["user"]["username"] %></p>
+<h1 id="users-index">Your Fellow Adventureres</h1>
 <ul>
-<% @result["user_achievements"].each do |a| %>
-<li><%= a["name"] %> - <%= a["description"] %> - <%= a["points"] %></li>
+<% @users.each do |user| %>
+	<li><%= link_to "#{user["username"]}", user_path(user["id"]) %></li>
 <% end %>
-</ul>
+</ul>	
