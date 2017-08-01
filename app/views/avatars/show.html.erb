@@ -19,12 +19,20 @@
 
       <div class='text-center col-lg-5'>
         <h2>Completed Achievements</h2>
+        <ul class='list-group'>
           <% @completed_achievements.each do |achievement| %>
-            <%= achievement['name'] %>
+            <li class='list-group-item'><%= achievement['name'] %></li>
           <% end %>
+        </ul>
       </div>
+
     <div class='col-lg-5 text-center'>
-      <h2>Available Achievements</h2>
+      <h2>Incomplete Achievements</h2>
+      <ul class='list-group'>
+        <% @incomplete_achievements.each do |achievement| %>
+          <li class='list-group-item'><%= achievement['name'] %></li>
+        <% end %>
+      </ul>
     </div>
     
   </div>
