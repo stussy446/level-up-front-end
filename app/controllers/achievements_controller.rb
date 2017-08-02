@@ -6,7 +6,7 @@ class AchievementsController < ApplicationController
 
   def show
     @achievement = HTTParty.get("http://localhost:3001/api/achievements/#{params[:id]}")
-    puts @achievement
+    @user = @achievement['user']
   end
 
   def update
