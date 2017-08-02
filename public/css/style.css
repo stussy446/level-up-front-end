@@ -1,4 +1,4 @@
-/*/*
+/*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
  *
@@ -23,13 +23,13 @@ font-family: 'Teko', sans-serif;
 font-family: 'Audiowide', cursive;*/
 
 body{
-  background-color: #000 !important;
-  color: #fff !important;
+  background-color: #000;
+  color: #fff;
   font-family: 'Audiowide', cursive;
 }
 
 /*
-  Dropdown
+  Dropdown 
 */
 .dropbtn {
     color: white;
@@ -78,8 +78,6 @@ body{
 .dropdown:hover .dropbtn {
     background-color: #000;
 }
-
-
 .jumbotron{
   background-color: #000;
   color: #fff;
@@ -93,7 +91,7 @@ body{
   width: 60%;
   background-color: #000;
   color: #fff;
-  text-align: left;
+  text-align: left; 
 }
 .completed-list-item{
   width: 60%;
@@ -104,6 +102,18 @@ body{
 .avatar-achievement-container{
   width: 90%;
 }
+.achievements-list{
+  background: #000;
+}
+.achievements-list a{
+  color: #fff;
+}
+.users-list{
+  background: #000;
+}
+.users-list a{
+  color: #fff;
+}
 @media screen and (max-width: 40em){
   .avatar-img{
     width: 100%;
@@ -113,6 +123,7 @@ body{
   .avatar-achievement-container{
     width: 100%;
     padding: 0px;
+    
   }
   .incompleted-list-item{
     width: 100%;
@@ -123,4 +134,4 @@ body{
   .avatar-achievement-column{
     width: 100%;
   }
-}
+} 
