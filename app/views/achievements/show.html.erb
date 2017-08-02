@@ -1,6 +1,14 @@
-<h1>Achievement - <%= @achievement["name"] %></h1>
+<h1>Achievement - <%= @achievement['achievement']["name"] %></h1>
 <br>
-<p>Description - <%= @achievement["description"] %></p>
+<p>Description - <%= @achievement['achievement']["description"] %></p>
 <br>
-<p>Point value - <%= @achievement["points"] %></p>
+<p>Point value - <%= @achievement['achievement']["points"] %></p>
 <%= link_to "Go back to achievements", achievements_path, class: "all-achievements" %>
+
+<%= form_tag('http://localhost:3001/api/users/1/user_achievements', method: 'post') do %>
+  <%= hidden_field_tag :user_id, @user['id'] %>
+  <%= hidden_field_tag :achievement_id, @achievement['achievement']['id'] %>
+  <button type='submit' class='btn btn-success'>Add</button>
+  <p>user id: <%= @user['id'] %></p>
+<% end %>
+  
