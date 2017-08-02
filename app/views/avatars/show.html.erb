@@ -6,7 +6,9 @@
 </head>
 <body>
   <div class="jumbotron text-center xp-nav">
-    <h1>XP: <%= @avatar['xp'] %></h1>  
+    <h1>XP: <%= @avatar['xp'] %></h1>
+    <h2><%= define_name(@avatar['xp']) %></h2>
+
   </div>
 
   <div>
@@ -46,7 +48,7 @@
       <%= link_to "Check out All of Todays Achievements!", achievements_path, class: "all-achievements" %><br/>
       <%= link_to "Check On your Fellow Adventurers!", users_path %>
     </nav>
-    
+
   </div>
 </body>
 </html>
