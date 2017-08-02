@@ -1,8 +1,11 @@
-<h1><%= @user_data["username"] %>'s Adventure Log</h1>	
+<h1><%= @user_data["username"] %>'s Adventure Log</h1>
 <div id="avatar-friend">
 	<h2 id ="avatar-friend-name"> <%= @avatar["name"] %></h2>
 	<h4>XP: <%= @avatar["xp"] %></h4>
 	<span><img src="/<%= @avatar['img'] %>"></span>
+</div>
+<div>
+  <%= render :partial => '/comments/form.html.erb', locals:{user: @user_data} %>
 </div>
 <footer>
 	<%= link_to "Go Back to All Adventurers", users_path %>
