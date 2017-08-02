@@ -1,9 +1,7 @@
-<h1><%= @user_data["username"] %>'s Adventure Log</h1>	
-<div id="avatar-friend">
-	<h2 id ="avatar-friend-name"> <%= @avatar["name"] %></h2>
-	<h4>XP: <%= @avatar["xp"] %></h4>
-	<span><img src="/<%= @avatar['img'] %>"></span>
+
+<div class="card mx-auto text-center avatar-card" style='margin: 0 auto; float: none;'>
+  <h2 class='card-title'><%= @user_data["username"] %></h2>
+  <h2 card='card-title'> <%= @avatar["name"] %></h2>
+  <h4 class='card-title'> XP: <%= @avatar["xp"] %> </h4>
+  <img class="card-img-top avatar-img" src="/<%= @avatar['img'] %>" alt="avatar">
 </div>
-<footer>
-	<%= link_to "Go Back to All Adventurers", users_path %>
-</footer>
