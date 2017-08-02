@@ -1,7 +1,16 @@
-
 <div class="card mx-auto text-center avatar-card" style='margin: 0 auto; float: none;'>
   <h2 class='card-title'><%= @user_data["username"] %></h2>
   <h2 card='card-title'> <%= @avatar["name"] %></h2>
   <h4 class='card-title'> XP: <%= @avatar["xp"] %> </h4>
   <img class="card-img-top avatar-img" src="/<%= @avatar['img'] %>" alt="avatar">
+
+
+</div><br>
+<div id="comment-list">
+  <% @comments.each do |comment| %>
+    <li class="comments"><%= comment["body"] %> - Posted By: <%= @sender["username"] %></li><br>
+  <% end %>
+</div>
+<div>
+  <%= render :partial => '/comments/form.html.erb', locals:{user: @user_data} %>
 </div>
