@@ -3,6 +3,11 @@
 	<h2 id ="avatar-friend-name"> <%= @avatar["name"] %></h2>
 	<h4>XP: <%= @avatar["xp"] %></h4>
 	<span><img src="/<%= @avatar['img'] %>"></span>
+</div><br>
+<div id="comment-list">
+  <% @comments.each do |comment| %>
+    <li class="comments"><%= comment["body"] %> - Posted By: <%= @sender["username"] %></li><br>
+  <% end %>
 </div>
 <div>
   <%= render :partial => '/comments/form.html.erb', locals:{user: @user_data} %>
