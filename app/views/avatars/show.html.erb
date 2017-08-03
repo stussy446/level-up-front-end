@@ -36,7 +36,7 @@
         <% @incomplete_achievements.each do |achievement| %>
           <li class='list-group-item incompleted-list-item' style='margin: 0 auto;'><strong style='color: red;'><%= achievement['name'] %>: <%= achievement["points"] %></strong><br />
           <%= achievement['description'] %><br />
-            <%= form_tag "http://localhost:3001/api/users/1/user_achievements/#{achievement['id']}", method: 'put' do %>
+            <%= form_tag "https://level-up-api.herokuapp.com/api/users/1/user_achievements/#{achievement['id']}", method: 'put' do %>
               <%= hidden_field_tag :id, achievement['id'] %>
               <button type='submit' class='btn btn-success' style='width: 100%;'>Done!</button>
             <% end %>

@@ -5,7 +5,7 @@
 <p>Point value - <%= @achievement['achievement']["points"] %></p>
 <%= link_to "Go back to achievements", achievements_path, class: "all-achievements" %>
 
-<%= form_tag('http://localhost:3001/api/users/1/user_achievements', method: 'post') do %>
+<%= form_tag('https://level-up-api.herokuapp.com/api/users/1/user_achievements', method: 'post') do %>
   <%= hidden_field_tag :user_id, @user['id'] %>
   <%= hidden_field_tag :achievement_id, @achievement['achievement']['id'] %>
   <button type='submit' class='btn btn-success'>Add</button>

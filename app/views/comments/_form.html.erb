@@ -1,4 +1,4 @@
-<%= form_tag('http://localhost:3001/api/users/1/comments', method: 'post') do %>
+<%= form_tag('https://level-up-api.herokuapp.com/api/users/1/comments', method: 'post') do %>
   <%= label_tag(:body, "Comment") %>
   <%= text_field_tag(:body) %>
   <%= hidden_field_tag :receiver, user["id"] %>
