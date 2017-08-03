@@ -2,5 +2,5 @@
   <%= label_tag(:body, "Comment") %>
   <%= text_field_tag(:body) %>
   <%= hidden_field_tag :receiver, user["id"] %>
-  <%= submit_tag("Submit Comment") %>
+  <button class='btn btn-success commit-button' type='submit'>Submit Comment</button>
 <% end %>

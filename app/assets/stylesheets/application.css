@@ -25,7 +25,7 @@ font-family: 'Audiowide', cursive;*/
 body{
   background-color: #000 !important;
   color: #fff !important;
-  font-family: 'Audiowide', cursive;
+  font-family: 'Audiowide', cursive !important;
 }
 
 /*
