@@ -1,6 +1,6 @@
 <%= form_tag('https://level-up-api.herokuapp.com/api/users/1/comments', method: 'post') do %>
   <%= label_tag(:body, "Comment") %>
-  <%= text_field_tag(:body) %><br />
+  <%= text_field_tag(:body) %>
   <%= hidden_field_tag :receiver, user["id"] %>
-  <button class='btn btn-success commit-button' type='submit'>Submit Comment</button>
+  <%= submit_tag("Submit Comment"), class: 'btn btn-success'%>
 <% end %>
