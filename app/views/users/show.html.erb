@@ -2,7 +2,7 @@
   <h2 class='card-title'><%= @user_data["username"] %></h2>
   <h2 card='card-title'> <%= @avatar["name"] %></h2>
   <h4 class='card-title'> XP: <%= @avatar["xp"] %> </h4>
-  <img class="card-img-top avatar-img" src="/<%= @avatar['img'] %>" alt="avatar">
+  <img class="card-img-top avatar-img" src="/images/Avatar_Gifs/Worgen/Worgen_1_bow.gif" alt="avatar">
 
 
 </div><br>
@@ -11,6 +11,6 @@
     <li class="comments"><%= comment["body"] %> - Posted By: <%= @sender["username"] %></li><br>
   <% end %>
 </div>
-<div>
+<div style='color: #000;'>
   <%= render :partial => '/comments/form.html.erb', locals:{user: @user_data} %>
 </div>
