@@ -1,8 +1,8 @@
 
 <div class="jumbotron text-center xp-nav" style='margin: 0'>
+  <h2><%= @avatar['name'] %></h2>
   <h2 style='color: gold;'>XP: <%= @avatar['xp'] %></h2>
-  <h3>Rank: <%= define_name(@avatar['xp']) %></h2>
-  <h4><%= @avatar['name'] %></h3>
+  <h3>Rank: <%= define_name(@avatar['xp']) %></h3>
 </div>
 
 
@@ -16,7 +16,7 @@
   </div>
 </div>
 
-  
+
 
   <div class='container avatar-achievement-container' style='margin: 0 auto;'>
       <div class='text-center col-lg-5 avatar-achievement-column'>
