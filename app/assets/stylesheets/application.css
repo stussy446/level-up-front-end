@@ -104,6 +104,10 @@ body{
 .avatar-achievement-container{
   width: 90%;
 }
+.comment-btn{
+  background: green;
+  color: #fff;
+}
 @media screen and (max-width: 40em){
   .avatar-img{
     width: 100%;
