@@ -7,9 +7,11 @@
 
 </div><br>
 <div id="comment-list">
+  <ul class='list-group'>
   <% @comments.each do |comment| %>
-    <li class="comments"><%= comment["body"] %> - Posted By: <%= @sender["username"] %></li><br>
+    <li class="list-item comments"><%= comment["body"] %> - Posted By: <%= @sender["username"] %></li><br>
   <% end %>
+  </ul>
 </div>
 <div style='color: #000;'>
   <%= render :partial => '/comments/form.html.erb', locals:{user: @user_data} %>
