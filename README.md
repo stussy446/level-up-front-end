@@ -48,6 +48,7 @@ Gamify your daily goals in order to develop and optimize good habits and improve
 	<br>
 	* User points increase, as well as character display if a point milestone has been reached
 	<br>
+	<br>
 	<img src="/public/images/readme-pics/Xp200.png" alt="Drawing" height="350" width="350" />
 	<br>
 	<img src="/public/images/readme-pics/Xp350.png" alt="Drawing" height="350" width="350" />
