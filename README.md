@@ -38,24 +38,20 @@ Gamify your daily goals in order to develop and optimize good habits and improve
 
 * A user chooses achievements that they would like to add to their personal list.
   
-![Global Achievements](/public/images/readme-pics/listofAllAchievemnts.png)
 <img src="/public/images/readme-pics/listofAllAchievemnts.png" alt="Drawing" height="250" width="250" />
 
 
 * A user goes to their personal achievements list
 	* If achievement recently completed, user will mark as complete
 
-	![Personal Achievements](/public/images/readme-pics/listofUserAchievements1-6.png)
 	<img src="/public/images/readme-pics/listofUserAchievements1-6.png" alt="Drawing" height="250" width="250" />
 
 
 	* User points increase, as well as character display if a point milestone has been reached
 
-	![Character Progression 1](/public/images/readme-pics/Xp200.png)
 	<img src="/public/images/readme-pics/Xp200.png" alt="Drawing" height="250" width="250" />
 
 
-	![Character Progression 2](/public/images/readme-pics/Xp350.png)
 	<img src="/public/images/readme-pics/Xp350.png" alt="Drawing" height="250" width="250" />
 
 
