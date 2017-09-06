@@ -37,9 +37,9 @@ Gamify your daily goals in order to develop and optimize good habits and improve
 * A user Logs in and goes to the global list of achievements. 
 
 * A user chooses achievements that they would like to add to their personal list.
-  
+<br>
 <img src="/public/images/readme-pics/listofAllAchievemnts.png" alt="Drawing" height="350" width="350" />
-
+<br>
 
 * A user goes to their personal achievements list
 	* If achievement recently completed, user will mark as complete
@@ -49,7 +49,7 @@ Gamify your daily goals in order to develop and optimize good habits and improve
 	* User points increase, as well as character display if a point milestone has been reached
 	<br>
 	<img src="/public/images/readme-pics/Xp200.png" alt="Drawing" height="350" width="350" />
-
+	<br>
 	<img src="/public/images/readme-pics/Xp350.png" alt="Drawing" height="350" width="350" />
 	<br>
 ## Team Dynamics 
