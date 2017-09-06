@@ -2,7 +2,7 @@
 
 Gamify your daily goals in order to develop and optimize good habits and improve overall well-being. Level-Up provides a fun way to track your goals through character progression and a point system. Create your avatar and level them up through the completion of achievements.
 
-<img src="/public/images/readme-pics/Xp50.png" alt="Drawing" height="250" width="250" />
+<img src="/public/images/readme-pics/Xp50.png" alt="Drawing" height="350" width="350" />
 
 ## Authored by
 
