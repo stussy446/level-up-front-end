@@ -43,18 +43,15 @@ Gamify your daily goals in order to develop and optimize good habits and improve
 
 * A user goes to their personal achievements list
 	* If achievement recently completed, user will mark as complete
-
+	<br>
 	<img src="/public/images/readme-pics/listofUserAchievements1-6.png" alt="Drawing" height="350" width="350" />
-
-
+	<br>
 	* User points increase, as well as character display if a point milestone has been reached
-
+	<br>
 	<img src="/public/images/readme-pics/Xp200.png" alt="Drawing" height="350" width="350" />
 
-
 	<img src="/public/images/readme-pics/Xp350.png" alt="Drawing" height="350" width="350" />
-
-
+	<br>
 ## Team Dynamics 
 
 * Schedule 
