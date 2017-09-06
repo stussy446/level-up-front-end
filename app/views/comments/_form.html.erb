@@ -1,0 +1,6 @@
+<%= form_tag('https://level-up-api.herokuapp.com/api/users/1/comments', method: 'post') do %>
+  <%= label_tag(:body, "Comment") %>
+  <%= text_field_tag(:body) %>
+  <%= hidden_field_tag :receiver, user["id"] %>
+  <%= submit_tag "Submit Comment", class: 'comment-btn'%>
+<% end %>

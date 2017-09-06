@@ -1,0 +1,47 @@
+
+<div class="jumbotron text-center xp-nav" style='margin: 0'>
+  <h2><%= @avatar['name'] %></h2>
+  <h2 style='color: gold;'>XP: <%= @avatar['xp'] %></h2>
+  <h3>Rank: <%= define_name(@avatar['xp']) %></h3>
+</div>
+
+
+
+<div class="card mx-auto text-center avatar-card" style='margin: 0 auto; float: none;'>
+  <img class="card-img-top avatar-img" src="<%= @avatar['img']%>" alt="avatar">
+  <div class="card-block">
+    <p class="card-text" style='background: black; color: green; margin: 0'>Total completed achievements: <%= @completed_achievements.length %></p>
+    <p class="card-text" style='background: black; color: #fff; margin: 0'>Total pending achievements: <%= @incomplete_achievements.length %></p>
+
+  </div>
+</div>
+
+
+
+  <div class='container avatar-achievement-container' style='margin: 0 auto;'>
+      <div class='text-center col-lg-5 avatar-achievement-column'>
+        <h2>Completed Achievements</h2>
+        <ul class='list-group'>
+          <% @completed_achievements.each do |achievement| %>
+            <li class='list-group-item completed-list-item' style="margin: 0 auto;"><strong style="color: green;"><%= achievement['name'] %>: <%= achievement['points'] %></strong><br />
+            <%= achievement['description'] %>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+
+    <div class='col-lg-5 text-center avatar-achievement-column'>
+      <h2>Incomplete Achievements</h2>
+      <ul class='list-group'>
+        <% @incomplete_achievements.each do |achievement| %>
+          <li class='list-group-item incompleted-list-item' style='margin: 0 auto;'><strong style='color: red;'><%= achievement['name'] %>: <%= achievement["points"] %></strong><br />
+          <%= achievement['description'] %><br />
+            <%= form_tag "https://level-up-api.herokuapp.com/api/users/1/user_achievements/#{achievement['id']}", method: 'put' do %>
+              <%= hidden_field_tag :id, achievement['id'] %>
+              <button type='submit' class='btn btn-success' style='width: 100%;'>Done!</button>
+            <% end %>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>

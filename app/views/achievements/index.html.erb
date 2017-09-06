@@ -1,0 +1,6 @@
+<h1>Achievements</h1>
+<ul class='list-group'>
+	<% @achievements.each do |achievement| %>
+		<li class='list-group-item achievements-list'><%= link_to "#{achievement['name']}", achievement_path(achievement["id"]) %></li>
+	<% end %>
+</ul>
